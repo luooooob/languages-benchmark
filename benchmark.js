@@ -158,6 +158,14 @@ print(color_cyan(`
 <><><><><><><><><><><><><><><><><><>
 `))
 
+const os = require("os")
+
+const hardware = `${os.cpus()[0].model} ${os.totalmem() / 1024 / 1024}`
+const system = os.version()
+print(color_magenta(hardware))
+print(color_magenta(system))
+print(`\n`)
+
 let data_table = []
 
 push_data_table(data_table, "Go", data_Go)
@@ -167,8 +175,4 @@ push_data_table(data_table, "nodejs", data_nodejs)
 push_data_table(data_table, "C", data_C)
 push_data_table(data_table, "C(O3)", data_C_O3)
 
-data_table.sort((a, b) => a.countPrimes > b.countPrimes)
-console.table(data_table)
-
-
-
+console.table(data_table.sort((a, b) => a.countPrimes - b.countPrimes))
