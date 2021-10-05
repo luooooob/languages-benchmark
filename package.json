@@ -1,7 +1,7 @@
 {
   "name": "@luooooob/languages-benchmark",
   "description": "Languages benchmark for C, Go, Java, nodejs and Python",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "benchmark.js",
   "bin": {
     "languages-douchong": "./benchmark.js"
