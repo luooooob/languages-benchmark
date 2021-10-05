@@ -1,5 +1,5 @@
 {
-  "name": "languages-benchmark",
+  "name": "@luooooob/languages-benchmark",
   "description": "Languages benchmark for C, Go, Java, nodejs and Python",
   "version": "1.0.0",
   "main": "benchmark.js",
