@@ -1,0 +1,15 @@
+{
+  "name": "languages-benchmark",
+  "description": "Languages benchmark for C, Go, Java, nodejs and Python",
+  "version": "1.0.0",
+  "main": "benchmark.js",
+  "bin": {
+    "languages-douchong": "./benchmark.js"
+  },
+  "scripts": {
+    "test": "node benchmark.js",
+    "clean": "node clean.js"
+  },
+  "author": "luooooob",
+  "license": "MIT"
+}
